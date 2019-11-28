@@ -1,4 +1,7 @@
 @media screen and (max-width: 1007px){
+	body{
+		width: 100%;
+	}
 	.form{
 		width: 515px;
 	}
@@ -50,6 +53,9 @@
 	
 }
 @media screen and (max-width: 750px){
+	body{
+		width: 100%;
+	}
 	.form{
 		width: 260px;
 	}
