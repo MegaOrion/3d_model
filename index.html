@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scaler=1.0">		
+		<title>3D Model</title>
+		<link rel="icon" href="images/favicon.png">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="mobile.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic">
+		<link rel="stylesheet" href="scripts/nouislider.css">
+		<script src="scripts/nouislider.js"></script>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<section class="section-header section-outer">
+			<div class="section-inner">
+				<div class="section-header-logo-phones-menu">
+					<div class="section-header-logo">
+						<div class="section-header-logo-ellipse">
+							<a href="#">
+								<img src="images/logo-ellipse.png" alt="23 degree">
+							</a>	
+						</div>
+						<div class="section-header-logotуpe">Degree</div>
+					</div>
+					<div class="section-header-phones">
+						<div class="section-header-phones">
+							<img src="images/logo-phones.png" alt="phones">
+						</div>
+						Есть вопросы? Звоните!<br>8 /800/ 259 09 36
+					</div>
+					<div class="section-header-menu">
+						<a href="#">
+							<img src="images/logo-menu.png" alt="menu">
+						</a>
+					</div>
+				</div>
+				<h1 class="heading">Услуги по 3D моделированию</h1>
+				<h2 class="subheading">полный спектр услуг</h2>
+				<p class="able">Оставьте заявку сейчас и получите дизайн интерьера 25кв<sup>2</sup> бесплатно!*</p>
+				<div class="formblock">
+					<div class="form_input">
+						<div class="form">						
+							<input class="input" placeholder="Ваше имя"/>
+							<input class="input" placeholder="E-mail"/>
+							<input class="input" placeholder="Номер телефона"/>
+						</div>
+					</div>
+					<div class="form_bot">
+						<button class="letter">Оставить заявку!</button>
+					</div>
+				</div>
+				<p class="garantee">*Мы гарантируем конфидициальность передаваемых данных</p>
+				<div><img class="mouse" src="images/mouse.png" alt=""></div>
+			</div>
+		</section>	
+		<!-- Header -->	
+
+		<!-- Services -->
+		<section class="section-Services section-outer">
+			<div class="section-inner">
+				<div><h1 class="section-Services_heading">Наши услуги</h1></div>
+				<div class="section-Services-interior">
+					<h2>Дизайн интерьера</h2>
+					<p>Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение у человека при нахождении в помещении</p>
+					<a href="#"><div class="let_request">Оставить заявку</div></a>
+				</div>
+				<div class="section-Services-exterior">
+					<h2>Дизайн экстерьера</h2>
+					<p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+				</div>
+				<div class="section-Services-visualization">
+					<h2>Визуализация</h2>
+					<p>Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+				</div>
+			</div>
+		</section>	
+		<!-- Services -->
+
+		<!-- value -->
+		<section class="section-value section-outer">
+			<div class="section-inner">
+				<div class="section-value_heading-wrap"><h1 class="section-value_heading">Расчитать стоимость</h1></div>
+				<p>Расчитайте предварительную стоимость разработки интерьера</p>
+				<div class="section-value_order">
+					<div class="section-value-square">
+						<p>Площадь помещения:</p>
+						<div class="section-value_radio_buttons">
+	    					<div class="labels">
+	    						<div>
+									<label>100м<sup>2</sup>
+										<input class="input_square" type="radio" name="option" value="100" />
+									</label>
+	    					    </div>
+	    					    <div>
+									<label>10 000м<sup>2</sup>
+										<input class="input_square" type="radio" name="option" value="10000" />
+									</label>
+	    					    </div>
+	    					    <div>
+									<label>250 000м<sup>2</sup>
+										<input class="input_square" type="radio" name="option" value="250000" />
+									</label>
+	    					    </div>
+	    					    <div>
+									<label>500 000м<sup>2</sup>
+										<input class="input_square" type="radio" name="option" value="500000" />
+									</label>
+	    					    </div>
+	    					</div>
+	    					<div id="slider"></div>							
+							<div class="pip">
+								<div class="pips"></div>
+								<div class="pips"></div>
+								<div class="pips"></div>
+								<div class="pips"></div>
+							</div>
+						</div>
+					</div>
+					<div class="section-value-packet">
+						<p>Выберите пакет:</p>
+						<div class="section-value-packet_buttons">
+							<label class="packet_buttons">
+								<input onclick="tariffCheck()" class="buttons_style" type="radio" name="radio5" value="2850"/>
+								<div class="buttons_text">Light
+									<div class="buttons_alt-hidden-light">План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)----------------------------------------</div>
+								</div>
+							</label>
+							<label class="packet_buttons">
+								<input onclick="tariffCheck()" class="buttons_style" type="radio" name="radio5" value="4850" checked/>
+								<div class="buttons_text">Medium
+									<div class="buttons_alt-hidden-medium">План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)</div>
+								</div>
+							</label>
+							<label class="packet_buttons">
+								<input onclick="tariffCheck()" class="buttons_style" type="radio" name="radio5" value="8850">
+								<div class="buttons_text">Full
+									<div class="buttons_alt-hidden-full">План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)+++++++++++++++++++++++++</div>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="section-value_average-cost">
+					<p>Площадь помещения:</p>
+					<h1 id='valuenow'><span></span> м<sup>2</sup></h1>
+					<br>
+					<p>Средняя стоимость м<sup>2</sup>:</p>
+					<h1 id='checkedTariff'><span>4850</span> тг.</h1><br>
+					<p>Средняя стоимость обьекта:</p>
+					<h1 id='totalPrice'><span></span> тг.</h1><br>
+					<button>Получить консультацию специалиста</button>
+					<p>или позвоните нам по телефону:</p>
+					<h2>+7 727 388 71 77</h2>
+				</div>				
+			</div>
+			<script src="script.js"></script>
+		</section>	
+		<!-- value -->
+
+		<!-- portfolio -->		
+		<section class="section-portfolio section-outer">
+			<div class="section-inner">
+				<div><h1 class="section-portfolio_header">Портфолио</h1></div>
+				<div  id="section-portfolio">
+					<div class="section-portfolio_tabs">
+						<input type="radio" name="tab" id="tab-1">
+						<label class="tabs-labels" for="tab-1">ВСЕ ПРОЕКТЫ</label>
+						<div class="vert-line"></div>
+						<input type="radio" name="tab" id="tab-2" checked>
+						<label class="tabs-labels" for="tab-2">ЭКСТЕРЬЕРЫ</label>
+						<div class="vert-line"></div>
+						<input type="radio" name="tab" id="tab-3">
+						<label class="tabs-labels" for="tab-3">ЖИЛЫЕ ИНТЕРЬЕРЫ</label>
+						<div class="vert-line"></div>
+						<input type="radio" name="tab" id="tab-4">
+						<label class="tabs-labels" for="tab-4">ОБЩЕСТВЕННЫЕ ИНТЕРЬЕРЫ</label>				
+						<div class="section-portfolio_content">
+							<div class="tab-1">
+								<img src="images/portfolio1.png" alt="">
+								<img src="images/portfolio2.png" alt="">
+								<img src="images/portfolio3.png" alt="">
+								<img src="images/portfolio4.png" alt="">
+								<img src="images/portfolio5.png" alt="">
+								<img src="images/portfolio6.png" alt="">
+								<img src="images/portfolio3.png" alt="">
+								<img src="images/portfolio1.png" alt="">
+								<img src="images/portfolio5.png" alt="">
+								<img src="images/visualization.png" alt="">
+								<img src="images/exterior.png" alt="">
+								<img src="images/interior.png" alt="">
+							</div>
+							<div class="tab-2">
+								<img src="images/portfolio1.png" alt="">
+								<img src="images/portfolio2.png" alt="">
+								<img src="images/portfolio3.png" alt="">
+								<img src="images/portfolio4.png" alt="">
+								<img src="images/portfolio5.png" alt="">
+								<img src="images/portfolio6.png" alt="">						
+							</div>
+							<div class="tab-3">				
+								<img src="images/visualization.png" alt="">						
+								<img src="images/interior.png" alt="">
+							</div>
+							<div class="tab-4">
+								<img src="images/portfolio1.png" alt="">						
+								<img src="images/portfolio5.png" alt="">
+								<img src="images/visualization.png" alt="">
+								<img src="images/exterior.png" alt="">
+								<img src="images/interior.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<!-- portfolio -->
+
+		<!-- Best -->
+		<section class="section-Best section-outer">
+			<div class="section-inner">
+				<div><h1 class="section-Best_header">Почему мы лучшие?</h1></div>
+				<div class="section-Best-flexed">
+					<div class="section-Best_icons">
+						<div class="section-Best_icons-style-bg_topright">
+							<img src="images/besticon1.png" alt="">
+						</div>
+						Профессиональные дизайнеры и визуализаторы с зарубежной практикой работы
+					</div>
+					<div class="section-Best_icons">
+						<div class="section-Best_icons-style-bg_botleft">
+							<img src="images/besticon2.png" alt="">
+						</div>
+						Интеративный подход, работаем до полного согласования с Вами
+					</div>
+					<div class="section-Best_icons">
+						<div class="section-Best_icons-style-bg_botright">
+							<img src="images/besticon3.png" alt="">
+						</div>
+						Решаем вопрос закупки, берем авторский надзор на себя (пакет Full)
+					</div>
+					<div class="section-Best_icons">
+						<div class="section-Best_icons-style-bg_centright">
+							<img src="images/besticon4.png" alt="">
+						</div>
+						Над проектом работает группа специалистов под началом project менеджера в ERP системе
+					</div>
+				<div class="section-Best-flexed">
+					<div class="section-Best_icons">
+						<div class="section-Best_icons-style-bg_topleft">
+							<img src="images/besticon5.png" alt="">
+						</div>
+						Выполнение раньше установленных сроков
+					</div>
+					<div class="section-Best_icons">
+						<div class="section-Best_icons-style-bg_botleft">
+							<img src="images/besticon6.png" alt="">
+						</div>
+						Дарим альбом проекта, вместе с 25% скидкой на следующее обращение
+					</div>
+				</div>
+				</div>
+			</div>
+		</section>	
+		<!-- Best -->
+
+		<!-- Interaction -->
+		<section class="section-Interaction section-outer">
+			<div class="section-inner">
+				<h1>Процесс взаимодействия</h1>				
+				<div class="section-Interaction_subline"></div>
+				<div class="section-Interaction_content">
+					<div id="order2"><img src="images/interaction1.png" alt=""></div>
+					<div class="section-Interaction_algo" id="order1">Заполнение брифа</div>
+					<div class="section-Interaction_algo" id="order3">Исследование</div>
+					<div id="order4"><img src="images/interaction2.png" alt=""></div>
+					<div id="order6"><img src="images/interaction3.png" alt=""></div>
+					<div class="section-Interaction_algo" id="order5">Идея</div>				
+					<div class="section-Interaction_algo" id="order7">Завершение</div>
+					<div id="order8"><img src="images/interaction4.png" alt=""></div>
+				</div>
+			</div>
+		</section>	
+		<!-- Interaction -->
+		<!-- Clients -->
+		<section class="section-Clients section-outer">
+			<div class="section-inner">
+				<h1 class="section-Clients_header">Нам доверяют более 50 компаний</h1>				
+				<div class="section-Interaction_subline"></div>
+				<div class="section-Clients_content">
+					<div><img src="images/clients1.png" alt=""></div>
+					<div><img src="images/clients2.png" alt=""></div>
+					<div><img src="images/clients3.png" alt=""></div>
+					<div><img src="images/clients4.png" alt=""></div>
+					<div><img src="images/clients5.png" alt=""></div>
+					<div><img src="images/clients6.png" alt=""></div>
+					<div><img src="images/clients7.png" alt=""></div>
+					<div><img src="images/clients1.png" alt=""></div>
+					<div><img src="images/clients2.png" alt=""></div>
+					<div><img src="images/clients3.png" alt=""></div>
+					<div><img src="images/clients4.png" alt=""></div>
+					<div><img src="images/clients5.png" alt=""></div>
+					<div><img src="images/clients6.png" alt=""></div>
+					<div><img src="images/clients7.png" alt=""></div>
+					<div><img src="images/clients1.png" alt=""></div>
+					<div><img src="images/clients2.png" alt=""></div>
+					<div><img src="images/clients3.png" alt=""></div>
+					<div><img src="images/clients4.png" alt=""></div>
+					<div><img src="images/clients5.png" alt=""></div>
+					<div><img src="images/clients6.png" alt=""></div>
+					<div><img src="images/clients7.png" alt=""></div>
+					<div><img src="images/clients1.png" alt=""></div>
+					<div><img src="images/clients2.png" alt=""></div>
+					<div><img src="images/clients3.png" alt=""></div>
+					<div><img src="images/clients4.png" alt=""></div>
+					<div><img src="images/clients5.png" alt=""></div>
+					<div><img src="images/clients6.png" alt=""></div>
+					<div><img src="images/clients7.png" alt=""></div>
+					<div><img src="images/clients1.png" alt=""></div>
+					<div><img src="images/clients2.png" alt=""></div>
+					<div><img src="images/clients3.png" alt=""></div>
+					<div><img src="images/clients4.png" alt=""></div>
+					<div><img src="images/clients5.png" alt=""></div>
+					<div><img src="images/clients6.png" alt=""></div>
+					<div><img src="images/clients7.png" alt=""></div>
+					<div><img src="images/clients1.png" alt=""></div>
+					<div><img src="images/clients2.png" alt=""></div>
+					<div><img src="images/clients3.png" alt=""></div>
+					<div><img src="images/clients4.png" alt=""></div>
+					<div><img src="images/clients5.png" alt=""></div>
+					<div><img src="images/clients6.png" alt=""></div>
+					<div><img src="images/clients7.png" alt=""></div>
+					<div><img src="images/clients1.png" alt=""></div>
+					<div><img src="images/clients2.png" alt=""></div>
+					<div><img src="images/clients3.png" alt=""></div>
+					<div><img src="images/clients4.png" alt=""></div>
+					<div><img src="images/clients5.png" alt=""></div>
+					<div><img src="images/clients6.png" alt=""></div>
+					<div><img src="images/clients7.png" alt=""></div>
+				</div>
+				<hr class="scroll-track">
+			</div>
+		</section>	
+		<!-- Clients -->
+		<!-- Team -->
+		<section class="section-Team section-outer">
+			<div class="section-inner">
+				<h1 class="section-Team_header">Наша команда</h1>
+				<div class="section-Interaction_subline"></div>
+				<div class="section-Team-content">
+					<div>
+						<img src="images/team8-1.png" alt="">
+						<h2>Ирина Притыкина</h2>
+						<p>Директор компании</p>
+					</div>
+					<div>
+						<img src="images/team8-2.png" alt="">
+						<h2>Игорь Карий</h2>
+						<p>Финансовый директор</p>
+					</div>
+					<div>
+						<img src="images/team8-3.png" alt="">
+						<h2>Илья Кондрашин</h2>
+						<p>Инженер модельер</p>
+					</div>
+					<div>
+						<img src="images/team8-4.png" alt="">
+						<h2>Маргарита Гордеева</h2>
+						<p>3D дизайнер</p>
+					</div>
+					<div>
+						<img src="images/team8-5.png" alt="">
+						<h2>Светлана Коток</h2>
+						<p>Дизайнер интерьеров</p>
+					</div>
+					<div>
+						<img src="images/team8-6.png" alt="">
+						<h2>Максим Ковальский</h2>
+						<p>Дизайнер ландшафтов</p>
+					</div>
+					<div class="section-Team-foot"><h1>Ты - то, что ты делаешь!</h1>
+						То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют старание и чувствуют неаккуратность. Это связано с уважением друг к другу, так что небрежность - это неуважение к самому себе.<br>
+						<span>Ислам Куаныш</span><br>
+						Директор
+					</div>
+				</div>
+			</div>
+		</section>	
+		<!-- Team -->
+		<!-- Blog -->
+		<section class="section-Blog section-outer">
+			<div class="section-inner">
+				<h1 class="section-Blog_header">Блог</h1>
+				<div class="section-Interaction_subline"></div>
+				<div  class="section-Blog_content">
+					<div>
+						<img src="images/blog1.png" alt="">
+						<a href="#">Минимализм – это самый простой, практичный и «спорный» стиль в дизайне интерьеров</a>
+					</div>
+					<div>
+						<img src="images/blog2.png" alt="">
+						<a href="#">Прованс - это спокойный южный регион Франции, с великолепнейшей природой</a>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<!-- Blog -->
+		<!-- Feedback -->
+		<section class="section-Feedback section-outer">
+			<div class="section-inner">
+				<h1 class="section-Feedback-header">Остались вопросы?</h1>				
+				<p>Задайте их в форме ниже и наши специалисты свяжуться с Вами!</p>
+				<div class="section-Feedback-content">
+					<div class="section-Feedback-form">
+						<div class="section-Feedback-form_input">
+							<input placeholder="Ваше имя">
+							<input placeholder="Ваш e-mail">
+							<input placeholder="Ваш номер телефона">
+							<textarea class="massage" placeholder="Ваше сообщение"></textarea>
+						</div>
+						<div class="section-Feedback-form_button">
+							<a href="#"><div class="let_request">Оставить заявку!</div></a>
+						</div>
+					</div>
+					<div class="section-Feedback-contacts">
+						<div>
+							<div class="contacts_icons"><img src="images/fbicon1.png" alt=""></div>
+							<p> +7 896 876 66 77</p>
+						</div>
+						<div>
+							<div class="contacts_icons"><img src="images/fbicon2.png" alt=""></div>
+							<p> +7 896 876 66 77</p>
+						</div>
+						<div>
+							<div class="contacts_icons"><img src="images/fbicon3.png" alt=""></div>
+							<p> sales@23degree.kz</p>
+						</div>
+						<div>
+							<div class="contacts_icons"><img src="images/fbicon4.png" alt=""></div>
+							<p> skype: 23degree</p>
+						</div>
+						<div>
+							<div class="contacts_icons"><img src="images/fbicon5.png" alt=""></div>
+							<p> telegram: 23degree</p>
+						</div>
+						<div  class="shedule"><span>График работы: с 9-00 до 18-00. Пн.-Пт.</span></div>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<!-- Feedback -->
+		<!-- Map -->
+		<div class="section-Map">			
+				<div style="overflow:hidden;max-width: 1920px;position: relative;"><iframe width="1920" height="660" src="https://maps.google.com/maps?width=1920&amp;height=660&amp;hl=en&amp;q=H96V%2BM6%20%D0%9D%D0%B8%D0%BA%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C%2C%20%D0%94%D0%BD%D0%B5%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C+(%D0%A1%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD%20%D0%AD%D0%9C)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/fr/">embedgooglemaps FR</a> & <a href="https://iamsterdamcard.it">www.iamsterdamcard.it</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>		
+		</div>	
+		<!-- Map -->
+		<!-- Foot -->
+		<footer class="section-Foot section-outer">
+			<div class="section-inner">
+				<div class="section-Foot-menu">
+					<div>
+						<a href="#">Главная</a><br><br>
+						<a href="#">Тарифы</a>
+					</div>
+					<div>
+						<a href="#">Вопросы-ответы</a><br><br>
+						<a href="#">Личный кабинет</a>
+					</div>
+					<div>
+						<a href="#">Новости</a><br><br>
+						<a href="#">Договор публичноый оферты</a>
+					</div>	
+					<div>
+						Мы в социальных сетях:<br>
+						<a href="#"><img src="images/soc1.png" alt=""></a>
+						<a href="#"><img src="images/soc2.png" alt=""></a>
+						<a href="#"><img src="images/soc3.png" alt=""></a>
+					</div>				
+				</div>	
+				<hr>
+				<div class="copyright">
+					<div>
+						<p>&copy; Kazteleport, 2015. Все права защищены</p>
+					</div>
+					<div>												
+						<p><img src="images/creator.png" alt="">Создание сайта -&nbsp;</p>
+					</div>	
+				</div>	
+			</div>
+		</footer>	
+		<!-- Foot -->
+	</body>
+
+</html>
