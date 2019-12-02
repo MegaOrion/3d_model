@@ -1070,7 +1070,7 @@ a{
 }
 .section-Feedback-contacts{
 	margin-left: 25px;
-	width: 300px;
+	max-width: 300px;
 }
 .section-Feedback-contacts p{
 	font-size: 12pt;
@@ -1079,6 +1079,7 @@ a{
 	top: -45px;
 	left: 35px;
 	text-align: left;
+	width: 80%;
 }
 .section-Feedback-contacts div{
 	margin-bottom: 20px;
