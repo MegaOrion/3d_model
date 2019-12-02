@@ -23,8 +23,11 @@
 		text-align: center;
 		min-height: 0;
 	}
+	.section-Interaction_content div{
+		max-height: 100px;
+	}
 	.section-Interaction_algo{
-		font-size: 15pt;
+		font-size: 20pt;
 		height: 100px;
 		line-height: 100px;
 	}
