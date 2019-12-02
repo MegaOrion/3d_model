@@ -58,6 +58,9 @@
 	
 }
 @media screen and (max-width: 750px){
+	.labels{
+		font-size: 8pt;
+	}
 	.form{
 		width: 260px;
 	}
