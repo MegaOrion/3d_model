@@ -1,8 +1,6 @@
-
 body{
 	font-family: Roboto;
 	margin: 0;
-	width: 100%;
 }
 .section-outer{
 	padding-left: 20px;
@@ -26,7 +24,12 @@ body{
 }
 .section-header-logo-phones-menu{
 	display: flex;
+	flex-wrap: wrap;
 	padding-top: 34px;
+}
+#ph{
+	    color: inherit;
+    text-decoration: inherit;
 }
 .section-header-logo{
 	display: flex;
@@ -287,6 +290,7 @@ a{
         ), url('images/value-bg.png') no-repeat 50% 50%;
 	background-size: cover;
 	margin: 0;
+	padding-bottom: 20px;
 }
 .section-value_heading-wrap{
 	width: 380px;
@@ -308,7 +312,8 @@ a{
 	margin-bottom: 15px;
 }
 .section-value-square{
-	width: 632px;
+	display: block;
+	max-width: 632px;
 	height: 129px;
 	border: 1px solid #fff;
 	border-radius: 5px;
@@ -321,12 +326,14 @@ a{
 	text-align: left;
 }
 .section-value-packet{
+	display: block;
 	margin-top: 10px;
-	width: 655px;
+	max-width: 632px;
 	height: 129px;
 	border: 1px solid #fff;
 	border-radius: 5px;
 	padding-left: 23px;
+	padding-right: 23px;
 }
 .section-value-packet p{
 	font-size: 16pt;
@@ -351,7 +358,7 @@ a{
 	height: 20px;
 	background: #fff;
 	top:-5px;
-	border-radius: 100%;
+	border-radius: 50%;
 
 }
 .labels div{
@@ -420,19 +427,13 @@ a{
 
 .section-value-packet_buttons{
 	display: flex;
-	width: 632px;
+	justify-content: space-between;
+	max-width: 100%;
 }
 .section-value-packet_buttons label{
-	cursor: pointer
-}
-.packet_buttons:first-child{
-	margin-left: 0;
-}
-.packet_buttons:last-child{
-	margin-right: 0;
-}
-.packet_buttons{
-	margin: auto;
+	display: block;
+	cursor: pointer;
+	width: 30%;
 }
 .buttons_style{
 	display: none;
@@ -442,7 +443,7 @@ a{
 	display: inline-block;
 	border: 1px solid #fff;
 	height: 45px;
-	width: 190px;
+	width: 100%;
 	text-align: center;
 	line-height: 45px;
 	margin: auto;
@@ -452,7 +453,7 @@ a{
 	background-color: #19b5fe;
 	border: none;
 	height: 47px;
-	width: 192px;
+	max-width: 192px;
 	line-height: 47px;
 }
 .buttons_alt-hidden-medium{
@@ -552,8 +553,10 @@ a{
 	cursor: default;
 }
 .section-value_order{
+	display: block;
+	width: 50%;
 	float: left;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 .section-value_average-cost{
 	text-align: center;
@@ -829,6 +832,9 @@ a{
 .section-Interaction_content div{
 	height: 263px;
 }
+.section-Interaction_content div img{	
+	width: 100%;
+}
 .section-Interaction_algo{
 	width: 572px;
 	height: 263px;
@@ -886,7 +892,7 @@ a{
 	border-radius: 5px;
 	background-color: #e3e7e8;
 	position: absolute;
-	top: 234px;
+	bottom: -5px;
 	z-index: 3;
 	border-style: none;
 }
