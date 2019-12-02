@@ -23,6 +23,11 @@
 		text-align: center;
 		min-height: 0;
 	}
+	.section-Interaction_algo{
+		font-size: 15pt;
+		height: 100px;
+		line-height: 100px;
+	}
 	#order1{
 		order: 1;
 	}
