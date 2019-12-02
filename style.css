@@ -830,7 +830,7 @@ a{
 	padding-bottom: 50px;
 }
 .section-Interaction_content div{
-	height: 263px;
+	max-height: 263px;
 }
 .section-Interaction_content div img{	
 	width: 100%;
@@ -991,6 +991,7 @@ a{
 }
 .section-Blog_content img{
 	margin-bottom: 20px;
+	width: 100%;
 }
 .section-Blog_content a{
 	text-decoration: none;
